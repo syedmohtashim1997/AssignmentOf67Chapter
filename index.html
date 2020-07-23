@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment</title>  
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h1>MobilePhone Lookup</h1>
+<div class="images">
+<div class="div1">
+<img src="photos/hd.jpg" alt="img1" class="img1" onclick="mobile()">
+<h2>Samsung galaxy S9</h2>
+</div>
+<div class="div2">
+<img src="photos/hd1.jpg" alt="img1" class="img1" onclick="mobile()">
+<h2>Oppo A9</h2>
+</div>
+<div class="div3">
+<img src="photos/hd2.jpg" alt="img1" class="img1" onclick="mobile()">
+<h2>Iphone 7s</h2>
+</div>
+<div class="div4">
+<img src="photos/ip.jpg" alt="img1" class="img1" onclick="mobile()">
+<h2>Iphone 6</h2>
+</div>
+</div>
+<table border="0">
+<tr><th>Index</th><th>Name</th><th></th><th>class</th></tr>
+<tr id="r1"><td>0</td><td>kashif</td><td></td><td>10</td><td><button onclick="row1()">Delete</button></td></tr>
+<tr id="r2"><td>1</td><td>Mohtashim</td><td></td><td>9</td><td><button onclick="row2()">Delete</button></td></tr>
+<tr id="r3"><td>2</td><td>wali</td><td></td><td>8</td><td><button onclick="row3()">Delete</button></td></tr>
+<tr id="r4"><td>3</td><td>wajid</td><td></td><td>7</td><td><button onclick="row4()">Delete</button></td></tr>
+</table>
+<div class="diva1">
+<img src="photos/12.jpg" alt="" id="image" onmouseover="over()" onmouseout="out()" class="a1">
+</div>
+<div class="count">
+<h2 id="heading">0</h2>
+<br/>
+<button onclick="actioninc()">Increase</button>
+<button onclick="actiondec()">Decrease</button>
+</div>
+<div class="form">
+<table>
+<tr>
+<td>
+Name:</td><td> <input type="text" id="name" required></td></tr>
+<tr>
+<td>
+F/Name:</td><td> <input type="text" id="father" required></td></tr>
+<tr>
+<td>
+PhoneNo:</td><td> <input type="text" id="phone" required></td></tr>
+<tr>
+<td>
+Address:</td><td> <textarea id="address" required></textarea></td></tr>
+<tr><td colspan="2">
+<button onclick="submit()">Submit</button>
+</td>
+</tr>
+</table>
+</div>
+<div id="hidden">
+
+</div>
+<p id="para">
+Lorem ipsum dolor sit amet consectetur
+<a href="javascript:void(0);" onclick="ReadMore()">ReadMore</a> 
+</p>
+
+<table border="1" id="table2">
+    <tr><th>Index</th><th>Name</th><th>class</th><th>Delete</th></tr>
+    <tr id="rr1"><td>0</td><td>kashif</td><td>10</td><td><button onclick="rrow1()">Delete</button></td></tr>
+    <tr id="rr2"><td>1</td><td>Mohtashim</td><td>9</td><td><button onclick="rrow2()">Delete</button></td></tr>
+    <tr id="rr3"><td>2</td><td>wali</td><td>8</td><td><button onclick="rrow3()">Delete</button></td></tr>
+    <tr id="rr4"><td>3</td><td>wajid</td><td>7</td><td><button onclick="rrow4()">Delete</button></td></tr>
+    
+  </table>
+    <div>
+      <h2>Insert Value</h2>
+      <table>
+        
+        <tr><td>Index:<input type="text" id="q1"></td><td>Name<input type="text" id="q2"></td><td>class:<input type="text" id="q3"></td></tr>
+     <tr><td colspan="3"><button onclick="insert()">Insert</button></td> </tr>
+      </table>
+    </div>
+    <div class="four">
+        <img data-toggle="modal" onclick="showimg(this)" data-target="#exampleModal" src="photos/10.jpg" alt="" srcset="" class="im">
+        <img data-toggle="modal" onclick="showimg(this)" data-target="#exampleModal" src="photos/6.jpg" alt="" srcset="" class="im">
+        <img data-toggle="modal" onclick="showimg(this)" data-target="#exampleModal" src="photos/7.png" alt="" srcset="" class="im">
+        <img data-toggle="modal" onclick="showimg(this)" data-target="#exampleModal" src="photos/8.jpg" alt="" srcset="" class="im">
+    </div>  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Modal Image</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="" alt="" srcset="" id="modalimg" class="bigimg">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<p id="zoom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, 
+fuga aut ex in odio consequatur soluta dolor et beatae
+odit recusandae illo id ipsa qui sunt iure quia eius eveniet?</p>
+<button onclick="zoomin()">Zoom In</button>
+ <button onclick="zoomout()">Zoom Out</button>
+ <div> <h1> DOM </h1> <div id="form-content" class=”content”>
+ <label for=”first-name”>First Name</label> <input type=”text” id=”first-name” /> 
+ <label for=”last-name”>Last Name</label> <input type=”text” id="last-name" /> 
+ <label for=”email”>Email</label> <input type=”text” id=”email” /> </div> 
+ <div id="main-content" class=”content”><p class=”render”> First Name : Alex</p
+><p class=”render” id=”lastName”>Last Name: Bank</p
+><p class=”render”> Email : alexbank@example.com</p> 
+      <p class=”render”> Country : Pakistan </p>
+       <p class=”render”> contact : +92 300 1234567</p> </div> 
+    </div>
+
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+</html>

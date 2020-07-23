@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color:royalblue;
+    text-shadow: 2px 3px 4px red;
+    text-transform: uppercase;
+}
+.img1{
+    width: 200px;
+    height:200px;
+    margin-top: 30px;
+}
+.images{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.bigimg{
+    width:470px;
+}
+.a1{
+    width: 500px;
+    height: 300px;
+}
+.diva1{
+    text-align: center;
+}
+
+.count{
+text-align: center;
+}
+.form{
+    margin-left: 100px;
+    background-color: powderblue;
+    width:400px ;
+}
+.four{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.im{
+    width: 300px;
+    height:200px;
+    margin: 10px;
+}
